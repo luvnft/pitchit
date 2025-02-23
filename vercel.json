@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "build", "use": "@sveltejs/adapter-node" } // Important: Tell Vercel to use the Node.js builder
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "build" } // Route all requests to the Node.js server
+    ]
+  }
